@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Message</title>
+        <link rel="stylesheet" href="../styles.css" />
+    </head>
+
+    <body>
+        <div class="view-msg">
+            <h1>Message:</h1>
+            <div class="view-msg-wrapper">
+                <div class="msg-title"><%= message.title %></div>
+                <div class="msg-text"> <%= message.text %></div>
+                <div class="msg-user">By: 
+                    <div class="msg-user-value">
+                        <%= message.user %>
+                    </div>
+                </div>
+                <div class="msg-date">On: 
+                    <div class="msg-date-value">
+                        <%= message.added %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-btns">
+                <form method="GET" action="../">
+                    <button>Go Back</button>
+                </form>
+    
+                <form method="GET" action="../new">
+                    <button>Post a new message</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

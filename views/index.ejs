@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <h2>Message Board</h2>
+        <div class="msg-wrapper">
+        <% for(let i=0; i<messages.length; i++) { %>
+            <a class="home-msg-link" id="test" href=<%= "/view/" + messages[i].id %>>
+            <div class="inbox-msg" id="homeMsg">
+                <p id="title"><%= messages[i].title %></p>
+                <p id="user">By: <%= messages[i].user %></p>
+                <p id="date">Added: <%= messages[i].added %></p>
+            </div>
+            </a>
+        <% } %>
+        </div>
+
+        <div class="index-new-btn">
+            <form method="GET" action="/new">
+                <button>Post a new Message</button>
+            </form>
+        </div>
+    </body>
+</html>

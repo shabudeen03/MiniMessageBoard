@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div class="new-msg-body">
+            <h1><%= heading %></h1>
+
+            <div class="new-msg-form">
+                <form method="POST" action="/new" id="newmsgform">
+                    <div>
+                        <label>Name: </label> <br />
+                        <input type="text" name="author" />
+                    </div>
+        
+                    <br />
+        
+                    <div>
+                        <label>Title: </label> <br />
+                        <input type="text" name="title" />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label>Text: </label> <br />
+                        <!-- <input type="text" name="text" /> -->
+                        <textarea id="newmsgtext" name="text" rows="5" cols="70"></textarea>
+                    </div>
+
+        
+                    <br />
+        
+                    <button><%= submitBtn %></button>
+                </form>
+            </div>
+    
+            <div class="form-cancel-btn">
+                <form method="GET" action="/">
+                    <button>Cancel</button>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

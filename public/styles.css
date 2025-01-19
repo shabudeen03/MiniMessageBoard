@@ -1,0 +1,158 @@
+h1, h2, div {
+    text-align: center;
+}
+
+.msg-wrapper, p {
+   margin-left: 25%;
+   width: 50%;
+   padding: 0;
+}
+
+.msg-wrapper {
+    height: 80%;
+}
+
+.inbox-msg:hover { 
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.inbox-msg {
+    border: 3px solid black;
+    text-decoration: none !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+a div, a div p {
+    text-decoration: none;
+}
+
+.index-new-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.view-msg {
+    text-align: center;
+}
+
+.msg-text, .msg-title {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.view-msg-wrapper {
+    border: 1px solid black;
+    width: 50%;
+    margin-left: 25%;
+    padding: 20px 0;
+}
+
+.msg-user {
+    margin-left: 10%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.msg-date {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.msg-user-value {
+    color: greenyellow;
+}
+
+.msg-date-value {
+    color: grey;
+    font-weight: bold;
+}
+
+.msg-user-value, .msg-date-value {
+    display: inline;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.form-btns {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: 25%;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.form-btns button {
+    font-size: 20px;
+}
+
+.new-msg-form {
+    border: 3px dotted black;
+    padding: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+.new-msg-form, .new-msg-form form input {
+    font-size: 25px;
+}
+
+.new-msg-form form button {
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: lightgrey;
+    color: green;
+    border: none;
+    border-radius: 7px;
+}
+
+.new-msg-body {
+    text-align: center;
+}
+
+.form-cancel-btn button {
+    background-color: black;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.new-msg-form form div {
+    text-align: left;
+}
+
+a:link {
+    text-decoration: none !important;
+}
+
+.msg-title {
+    font-weight: bold;
+}
+
+.inbox-msg #title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.inbox-msg #user {
+    font-size: 20px;
+}
+
+a.home-msg-link {
+    text-decoration: none !important;
+    text-decoration-line:overline;
+}
