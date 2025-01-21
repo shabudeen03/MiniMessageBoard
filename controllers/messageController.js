@@ -1,6 +1,6 @@
 const asyncHandler = require('express-async-handler');
 
-const db = require('../database/db.js');
+const db = require('../database/queries.js');
 
 const getMessages = asyncHandler(async (req, res) => {
     const messages = await db.getMessages();
@@ -9,7 +9,6 @@ const getMessages = asyncHandler(async (req, res) => {
 
 const getMessageById = asyncHandler(async (req, res) => {
     const { id } = req.params;
-  
     const msg = await db.getMessageById(Number(id));
 
     if(msg) {
