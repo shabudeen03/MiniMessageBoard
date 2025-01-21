@@ -8,14 +8,16 @@
     <body>
         <h2>Message Board</h2>
         <div class="msg-wrapper">
+        <% if(messages) { %>
         <% for(let i=0; i<messages.length; i++) { %>
             <a class="home-msg-link" id="test" href=<%= "/view/" + messages[i].id %>>
             <div class="inbox-msg" id="homeMsg">
                 <p id="title"><%= messages[i].title %></p>
-                <p id="user">By: <%= messages[i].user %></p>
+                <p id="user">By: <%= messages[i].username %></p>
                 <p id="date">Added: <%= messages[i].added %></p>
             </div>
             </a>
+        <% } %>
         <% } %>
         </div>
 
